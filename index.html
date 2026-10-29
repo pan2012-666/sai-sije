@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sai sije — opravy a úpravy odevov a tašiek | Krížna 26, Bratislava</title>
+<meta name="description" content="Sai sije, Krížna 26, Bratislava. Opravy a úpravy odevov a tašiek. Denne 8:00 – 20:00, tel. +421 903 143 758.">
+<meta name="theme-color" content="#f6f1e8">
+<meta property="og:title" content="Sai sije — opravy a úpravy odevov a tašiek">
+<meta property="og:description" content="Krížna 26, Bratislava · denne 8:00 – 20:00 · +421 903 143 758">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap hero__inner">
+    <p class="eyebrow">Bratislava · Krížna 26</p>
+    <h1 class="hero__title">Sai sije</h1>
+    <p class="hero__tagline" data-bind="tagline">Opravy a úpravy odevov, tašiek a bytového textilu</p>
+
+    <p class="hero__hours">
+      <span class="dot" aria-hidden="true"></span>
+      <span data-bind="hours">Denne 8:00 – 20:00</span>
+    </p>
+
+    <div class="hero__cta">
+      <a class="btn btn--solid" data-bind-href="tel" href="tel:+421903143758">
+        <span class="btn__ico" aria-hidden="true">☎</span> Zavolať
+      </a>
+      <a class="btn btn--ghost" data-bind-href="wa" href="https://wa.me/421903143758" target="_blank" rel="noopener">
+        <span class="btn__ico" aria-hidden="true">✆</span> WhatsApp
+      </a>
+    </div>
+
+    <p class="hero__note" data-bind="note">Vyzdvihnutie a doručenie po dohode.</p>
+  </div>
+  <div class="hero__stitch" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <section class="section" id="cennik">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Cenník</h2>
+        <p class="section__lead" data-bind="lead"></p>
+      </div>
+      <div id="menu-root" class="menu"><!-- vygeneruje app.js --></div>
+      <p class="fineprint">Ceny sú orientačné, konečnú cenu určíme podľa materiálu a rozsahu práce.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="postup">
+    <div class="wrap">
+      <h2 class="section__title">Ako to prebieha</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Zavoláte alebo napíšete</h3>
+          <p>Poviete, čo potrebujete upraviť. Prípadne pošlete fotografiu.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Prinesiete alebo vyzdvihneme</h3>
+          <p>Prídete na Krížnu 26, alebo sa dohodneme na vyzdvihnutí.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Hotovo a pripravené</h3>
+          <p>Bežné úpravy zvládneme do 2–3 dní. Ozveme sa, keď je hotovo.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="kontakt">
+    <div class="wrap contact">
+      <div class="contact__info">
+        <h2 class="section__title">Kontakt</h2>
+
+        <dl class="facts">
+          <div class="fact">
+            <dt>Adresa</dt>
+            <dd data-bind="address">Krížna 26, Bratislava</dd>
+          </div>
+          <div class="fact">
+            <dt>Otvorené</dt>
+            <dd data-bind="hours">Denne 8:00 – 20:00</dd>
+          </div>
+          <div class="fact">
+            <dt>Telefón</dt>
+            <dd><a data-bind-href="tel" data-bind="phone" href="tel:+421903143758">+421 903 143 758</a></dd>
+          </div>
+          <div class="fact">
+            <dt>WhatsApp</dt>
+            <dd><a data-bind-href="wa" href="https://wa.me/421903143758" target="_blank" rel="noopener">Napísať správu</a></dd>
+          </div>
+        </dl>
+
+        <div class="social" id="social-root"><!-- vygeneruje app.js --></div>
+      </div>
+
+      <aside class="contact__qr">
+        <p class="qr__label">Naskenujte a&nbsp;uložte si nás</p>
+        <div class="qr__frame" id="qr-root" aria-label="QR kód na túto stránku"></div>
+        <p class="qr__hint">Otvorte fotoaparát v&nbsp;telefóne a&nbsp;namierte na kód.</p>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span id="year">2026</span> Sai sije · Krížna 26, Bratislava</p>
+    <p class="footer__small">Šitie a opravy odevov · denne 8:00 – 20:00</p>
+  </div>
+</footer>
+
+<!-- mobilná lišta / mobile CTA -->
+<div class="stickybar" id="stickybar">
+  <a class="stickybar__btn" data-bind-href="tel" href="tel:+421903143758">Zavolať</a>
+  <a class="stickybar__btn stickybar__btn--ghost" data-bind-href="wa" href="https://wa.me/421903143758" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="menu.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
